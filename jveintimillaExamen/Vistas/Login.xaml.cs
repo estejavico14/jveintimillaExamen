@@ -19,17 +19,36 @@ namespace jveintimillaExamen.Vistas
 
         private void btnIniciar_Clicked(object sender, EventArgs e)
         {
-            string usuario = "1";
-            string contraseña = "1";
-            if (usuario == txtUsuario.Text && contraseña == txtContraseña.Text)
+            try
             {
-                Navigation.PushModalAsync(new Registro());
+                var usuario = txtUsuario.Text;
+                var pass = txtContraseña.Text;
+
+                if (usuario == "estudiante2023" && pass == "uisrael2023")
+                {
+
+                    DisplayAlert("Usuario", "Usuario Conectado", "OK");
+                    Navigation.PushAsync(new Registro(usuario));
+
+
+                }
+                else
+                {
+                   
+                    DisplayAlert("Usuario", "Usuario o contraseña incorrecta", "Salir");
+
+
+                }
+
+
 
             }
-            else
+            catch (Exception)
             {
-                DisplayAlert("ALERTA", "Usuario/Contraseña Incorrectos", "Cerrar");
+
+                throw;
             }
         }
+        
     }
 }

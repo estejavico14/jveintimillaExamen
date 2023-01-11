@@ -4,8 +4,9 @@
              x:Class="jveintimillaExamen.Vistas.Registro">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Aqua">
+            <Label Text="Sistema Academico" TextColor="Blue"  FontSize="24" HorizontalTextAlignment="Center"/>
             <Label Text="VENTANA DE REGISTRO" TextColor="Black"  FontSize="18" HorizontalTextAlignment="Center"/>
-            <Label x:Name ="lblUsuario " Text="" TextColor="DarkRed"  FontSize="18" HorizontalTextAlignment="End"/>
+            <Label x:Name ="lblUsuario"  TextColor="DarkRed"  FontSize="18" HorizontalTextAlignment="End"/>
             <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" />
             <Grid>
                 <Grid.RowDefinitions>
@@ -22,15 +23,17 @@
 
                 <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
                 <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"/>
+                
                 <Label Text="Monto Inicial" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtMinicial" Keyboard="Numeric" Placeholder="Monto Inicial" Grid.Row="1" Grid.Column="1"/>
-                <Label Text="Pago Inicial" Grid.Row="2" Grid.Column="0"/>
-                <Entry x:Name="txtPinicial" Placeholder="Pago Inicial" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+                
+                <Label Text="Pago Mensual" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPmensual" Placeholder="Pago Mensual" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" IsEnabled="False"/>
 
             </Grid>
 
             <Button x:Name="btnCalcular" Text="CALCULAR" Clicked="btnCalcular_Clicked"/>
-            <Button x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked"/>
+            <Button x:Name="btnGuardar" Text="GUARDAR INFORMACION" Clicked="btnGuardar_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,7 +4,7 @@
              x:Class="jveintimillaExamen.Vistas.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Sistema Academico" TextColor="Black"  FontSize="18" HorizontalTextAlignment="Center"/>
+            <Label Text="Sistema Academico" TextColor="Blue"  FontSize="24" HorizontalTextAlignment="Center"/>
             <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" />
             <Grid>
                 <Grid.RowDefinitions>

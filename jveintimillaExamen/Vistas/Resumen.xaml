@@ -4,7 +4,9 @@
              x:Class="jveintimillaExamen.Vistas.Resumen">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Sistema Academico" TextColor="Blue"  FontSize="24" HorizontalTextAlignment="Center"/>
             <Label Text="VENTANA DE RESUMEN" TextColor="Black"  FontSize="18" HorizontalTextAlignment="Center"/>
+            <Label x:Name ="lblUsuario"  TextColor="DarkRed"  FontSize="18" HorizontalTextAlignment="End"/>
             <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" />
            
             <Grid>
@@ -21,9 +23,9 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Nombre" FontSize="18"   Grid.Row="0" Grid.Column="0"/>
-                <Entry x:Name="lblUsuario" Text="" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtNombre" Keyboard="Text" Grid.Row="0" Grid.Column="1" IsEnabled="False"/>
                 <Label Text="TOTAL" FontSize="18"  Grid.Row="1" Grid.Column="0"/>
-                <Entry x:Name="txtTotal" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtTotal" Keyboard="Text" Grid.Row="1" Grid.Column="1" IsEnabled="False"/>
 
 
             </Grid>
